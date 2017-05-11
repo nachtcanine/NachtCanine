@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-socket-printing",
+  "version": "1.1.8",
+  "description": "cordova plugin socket for ESC/P printing",
+  "cordova": {
+    "id": "cordova-plugin-socket-printing",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachtcanine/NachtCanine.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "nachtcanine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nachtcanine/NachtCanineissues"
+  },
+  "homepage": "https://github.com/nachtcanine/NachtCanine#readme"
+}

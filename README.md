@@ -1,1 +1,1 @@
-# NachtCanine
+cordova plugin socket.

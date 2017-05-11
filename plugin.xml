@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-socket-printing" version="1.1.7" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Nacht Canine ESC/P Printing</name>
+    <js-module name="NachtCanine" src="www/NachtCanine">
+        <clobbers target="plugin.NachtCanine" />
+        <clobbers target="cordova.plugins.NachtCanine" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="IonicSocket">
+                <param name="android-package" value="com.nachtcanine.plugins.NachtCanine" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/NachtCanine.java" target-dir="src/com/nachtcanine/plugins" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="NachtCanine">
+                <param name="ios-package" value="NachtCanine" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/NachtCanine" />
+        <source-file src="src/ios/NachtCanine" />
+    </platform>
+</plugin>
